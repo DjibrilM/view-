@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78946f03.css",
+    "main.js": "/static/js/main.5a717c97.js",
+    "static/js/787.54ab60a8.chunk.js": "/static/js/787.54ab60a8.chunk.js",
+    "static/media/playstation.mp4": "/static/media/playstation.a7ce34eeab1fc69ac8da.mp4",
+    "static/media/iphone14.mp4": "/static/media/iphone14.ab1714c4c9efdfdcf622.mp4",
+    "static/media/Apple Watch Ultra _ Call To The Wild _ Apple.mp4": "/static/media/Apple Watch Ultra _ Call To The Wild _ Apple.9f5722c714cc82fd4cda.mp4",
+    "static/media/loading-gif.gif": "/static/media/loading-gif.803f24369a085e35482e.gif",
+    "static/media/errorIcon.svg": "/static/media/errorIcon.bdf1c60c297dc6528f56fe6a382dacdf.svg",
+    "static/media/server.png": "/static/media/server.7157b6c999442be8d3a5.png",
+    "index.html": "/index.html",
+    "main.78946f03.css.map": "/static/css/main.78946f03.css.map",
+    "main.5a717c97.js.map": "/static/js/main.5a717c97.js.map",
+    "787.54ab60a8.chunk.js.map": "/static/js/787.54ab60a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78946f03.css",
+    "static/js/main.5a717c97.js"
+  ]
+}
