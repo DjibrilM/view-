@@ -156,7 +156,7 @@ export const LoginForm = () => {
                 e.preventDefault();
             }}
             autoComplete="off"
-            className="max-w-[700px] mt-20 border bg-white h-[400px] rounded-lg p-5 sm:p-10 m-auto flex flex-col gap-5 dark:bg-[#1A1A1A] dark:border-none ">
+            className="max-w-[700px] mt-20 border bg-white h-[400px]  md:rounded-lg p-5 sm:p-10 m-auto flex flex-col gap-5 dark:bg-[#1A1A1A] dark:border-none ">
             <div className="">
                 <Inputs disabled={loading} inputType="email" label="Email" valid={loginForm["email"].valid} onChange={(value: string) => onChange("email", value)} errorMessage="user email required !" />
             </div>
@@ -390,7 +390,7 @@ export const RegisterForm = () => {
 
     return <div>
         <section className="w-full p-1">
-            <form className="max-w-[700px] mt-10 border bg-white  rounded-lg p-4 sm:p-10 m-auto flex flex-col gap-5 dark:bg-[#1A1A1A] dark:border-none mb-10 " onSubmit={(e) => {
+            <form className="max-w-[700px] mt-10 border bg-white  sm:rounded-lg p-4 sm:p-10 m-auto flex flex-col gap-5 dark:bg-[#1A1A1A] dark:border-none mb-10 " onSubmit={(e) => {
                 e.preventDefault();
             }}>
                 <div className="w-32 h-32 my-5 md:w-52 md:h-52 overflow-hidden rounded-full m-auto  border flex justify-center items-center">
