@@ -23,7 +23,6 @@ const Profile = () => {
             </div>
 
             <div className="relative top-3 right-2">
-
                 <Buttons click={() => { }}>
                     <FaUserCog className="text-gray-500 text-[18px] cursor-pointer dark:text-white" />
                 </Buttons>

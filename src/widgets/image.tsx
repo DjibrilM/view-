@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from 'react-icons/io'
+import {BsDownload,BsBookmark} from 'react-icons/bs'
 import { useRecoilValue } from "recoil";
 import user from "../recoil/user";
 
@@ -12,24 +13,28 @@ const Image: React.FC<Props> = ({ source }): JSX.Element => {
     const [loaded, setLoaded] = useState<boolean>(false);
     const theme = useRecoilValue(user);
 
-
     return (
         <>
-            <section className="duration-[1s] transition w-full h-full fixed top-0 left-0 right-0 z-50 bg-[#60a5faa6] flex justify-center items-center px-3 " style={show ? { display: "flex", opacity: 1, transition: '5s' } : { display: "none", opacity: 0, transition: '5s' }}>
-                <div className="w-[50px] h-[50px] border-2 border-white absolute top-10 left-10 rounded-full flex items-center justify-center cursor-pointer" onClick={() => setShow(false)}>
+            <section className="duration-[1s] transition w-full h-full fixed top-0 left-0 right-0 z-50 bg-[#60a5faa6] flex flex-col justify-center items-center px-3 " style={show ? { display: "flex", opacity: 1, transition: '5s' } : { display: "none", opacity: 0, transition: '5s' }}>
+                <div className="w-[30px] h-[30px] border-2 border-white absolute top-5 left-5 rounded-full flex items-center justify-center cursor-pointer" onClick={() => setShow(false)}>
                     <IoMdClose className="text-white" />
                 </div>
                 <img onLoad={() => {
                     setTimeout(() => {
                         setLoaded(true)
-                    }, 1000);      
-                }} className="max-w-[600px] mt-5 min-w-[200px] w-full" src={source} alt="" />
-            </section>
+                    }, 1000);
+                }} className="max-w-[600px] mt-5 min-w-[200px] w-full " src={source} alt="" />
 
+                <div className="max-w-[600px] mt-5 min-w-[200px] w-full flex gap-10 text-white cursor-pointer text-2xl font-bold">
+                    <BsDownload />
+                    <BsBookmark />
+                    
+                </div>
+            </section>
             {loaded &&
                 <img onClick={() =>
                     setShow(true)}
-                    className="h-full w-full max-[500px] object-cover"
+                    className="cursor-pointer h-full w-full max-[500px] object-cover"
                     src={source}
                     onLoad={() => {
                         setLoaded(true)
@@ -41,7 +46,6 @@ const Image: React.FC<Props> = ({ source }): JSX.Element => {
                     <p></p>
                 </div>
             }
-
         </>);
 };
 
