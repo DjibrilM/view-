@@ -5,7 +5,7 @@ const user = atom({
     key: "user_stats_10",
     default:
     {
-        isLoggedIn: false,
+        isLoggedIn: true,
         mode: "light",
         user: null,
         token: null,
