@@ -5,7 +5,7 @@ import { HiOutlineHeart } from "react-icons/hi2"
 import { GoComment } from "react-icons/go"
 import LinkParaGraph from "../../widgets/linkParaGraph";
 import PostVideo from "../../assets/videos/playstation.mp4";
-
+import Image from "../../widgets/image";
 
 
 const Post = () => {
@@ -13,7 +13,7 @@ const Post = () => {
         <div className="flex justify-between">
             <div className="flex gap-3">
                 <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
-                    <img className="h-full w-full object-cover" src="https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ=" alt="" />
+                    <Image source="https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ=" />
                 </div>
                 <div className="relative top-2">
                     <h4 className="text-[15px] text-gray-600 font-semibold dark:text-gray-200">Djibril mug</h4>
@@ -38,7 +38,7 @@ const Post = () => {
 
         <div className="mt-5 w-full h-full ">
             {/* <video src={PostVideo} className="rounded-lg"  controls></video> */}
-            <img className="w-full h-[100%] object-center object-cover rounded-lg max-h-[500px]" src="https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <Image source="https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ=" />
         </div>
 
         <div className="flex mt-8 gap-10">

@@ -5,6 +5,8 @@ import { GoLocation } from "react-icons/go";
 import { MdOutlineWorkOutline, MdOutlineModeEditOutline } from "react-icons/md";
 import { BsTwitter, BsLinkedin } from "react-icons/bs";
 import Buttons from "../UI/Button";
+import Image from "../../widgets/image";
+
 
 
 const Profile = () => {
@@ -12,7 +14,7 @@ const Profile = () => {
         <div className="flex justify-between border-b border-gray-200  dark:border-[#ffffff10] pb-5">
             <div className="flex gap-2">
                 <div className="w-[40px] h-[40px]  rounded-full overflow-hidden bg-gray-300  dark:border">
-                    <img src={"https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ="} className="w-full h-full object-cover cursor-pointer" alt="profile" />
+                    <Image source="https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ=" />
                 </div>
                 <div className="relative top-1">
                     <h4 className="text-[14px] font-semibold dark:text-gray-50">Malcon kidman</h4>

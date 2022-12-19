@@ -6,7 +6,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import errorFile from "../../assets/vectors/server.png"
 import { useEffect } from "react";
 import LinkParaGraph from "../../widgets/linkParaGraph";
-
+import Image from "../../widgets/image";
 
 
 
@@ -103,8 +103,7 @@ const NewPost = () => {
         <input type="file" accept="image/*" name="" id="" className="hidden" ref={uploadImageInput} onChange={() => selectImage()} />
         <div className="flex justify-between gap-5  ">
             <div className="w-[50px] h-[50px]  rounded-full overflow-hidden">
-                <img className="w-full h-full  object-cover"
-                    src="https://media.istockphoto.com/id/459368695/photo/young-black-beauty-with-afro-hairstyle.jpg?s=612x612&w=0&k=20&c=5wJEThtNBqNY3c748Fl6Sg-gKH4dJuv8d8mRUCHs6DQ=" alt="" />
+                <Image source="https://www.hollywoodreporter.com/wp-content/uploads/2019/03/avatar-publicity_still-h_2019.jpg" />
             </div>
 
             <div className="w-[90%] p-5  flex items-center bg-gray-200 dark:bg-[#3e3c3cce] rounded-[10px]">

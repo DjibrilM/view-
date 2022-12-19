@@ -9,8 +9,73 @@ body {
   transition: 0.3;
 }
 
-img{
+img {
   -webkit-user-drag: none;
-  -moz-window-dragging:no-drag;
+  -moz-window-dragging: no-drag;
 }
 
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* body {
+  background-color: #5050fe;
+} */
+
+.card {
+  height: 200px;
+  max-width: 100%;
+  background-color: #fff;
+  border: 0.5px solid rgb(204, 204, 204, 0.5);
+}
+
+.darkCard {
+  height: 200px;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.card h1 {
+  width: 100%;
+  height: 100%;
+}
+
+.darkCard h1 {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card * {
+  background: linear-gradient(120deg,
+      #e5e5e5 30%,
+      #fff 38%,
+      #fff 40%,
+      #e5e5e5 48%);
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load 1s infinite;
+}
+
+.darkCard * {
+  background: linear-gradient(120deg,
+      #232323 30%,
+      #363333 38%,
+      #363333 40%,
+      #232323 48%);
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load 1s infinite;
+}
+
+
+
+@keyframes load {
+  100% {
+    background-position: -100% 0;
+  }
+}

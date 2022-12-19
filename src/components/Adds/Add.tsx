@@ -10,7 +10,7 @@ import { FaPlaystation } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, } from "swiper";
-import { string } from "yup";
+
 
 
 interface props {

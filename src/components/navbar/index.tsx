@@ -5,6 +5,8 @@ import { MdMessage, MdClose } from "react-icons/md"
 import { IoNotifications } from "react-icons/io5";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import DropDown from "../dropDown/dropDown";
+import {RxVideo} from 'react-icons/rx'
+
 
 import {
   useRecoilState,
@@ -64,6 +66,9 @@ const Navbar = (): JSX.Element => {
             <IoIosSunny className="dark:text-[#333]" />
           </Buttons>
         </div>
+
+
+
         <div className="">
           <Buttons
             click={() => { }}
@@ -129,6 +134,15 @@ const Navbar = (): JSX.Element => {
           <BsFillQuestionCircleFill className="dark:text-[#F6F6F6]" />
         </Buttons>
       </div>
+
+      <div className="">
+        <Buttons
+          click={() => { }}
+        >
+          <RxVideo className="dark:text-[#F6F6F6]" />
+        </Buttons>
+      </div>
+
 
       <div className="">
         <DropDown />
