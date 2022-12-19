@@ -60,9 +60,9 @@ export const verify = (token: string) => {
     const promise = new Promise((resolve: Function, reject: Function) => {
 
         axios({
-            url:"http://localhost:8080/auth/verifyUser",
-            method:"post",
-            headers:{
+            url: "http://localhost:8080/auth/verifyUser",
+            method: "post",
+            headers: {
                 Authorization: `Bearer ${token}`
             }
         })

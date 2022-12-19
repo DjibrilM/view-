@@ -27,7 +27,7 @@ const Navbar = (): JSX.Element => {
     SetToggleMenu(!toggleMenu);
   }
 
-  return <header className="fixed top-0 z-50 border-b dark:border-gray-800 h-20 w-full bg-white items-center flex justify-between px-10 dark:bg-[#1A1A1A]">
+  return <header className="fixed top-0 z-50 border-b dark:border-gray-800 h-20 w-full bg-white items-center flex justify-between px-10 dark:bg-[#1A1A1A] header">
     <div className="flex gap-5 items-center justify-center">
       <h1 className=" md:text-2xl font-bold text-[#33DDFB] cursor-pointer dark:text-[#33DDFB]"> View Media.</h1>
       <div className="w-72 h-10 bg-lightGray rounded-md relative dark:bg-[#4D4D4D] hidden md:block" >

@@ -2,19 +2,13 @@ import React, { useRef, useState } from "react";
 import user from "../../recoil/user";
 import { BiImageAlt } from "react-icons/bi";
 import { AiOutlineVideoCameraAdd } from "react-icons/ai"
-import { Anchorme, LinkComponentProps } from 'react-anchorme'
 import { IoCloseOutline } from "react-icons/io5";
 import errorFile from "../../assets/vectors/server.png"
 import { useEffect } from "react";
+import LinkParaGraph from "../../widgets/linkParaGraph";
 
 
-const CustomLink = (props: LinkComponentProps) => {
-    return (
-        <i>
-            <a className="text-blue-500" {...props} />
-        </i>
-    )
-}
+
 
 const NewPost = () => {
     const uploadvideoInput = useRef<any>();
@@ -63,6 +57,10 @@ const NewPost = () => {
                 image.current.src = result;
             }
             reader.readAsDataURL(file)
+
+            reader.onerror = () => {
+                alert('fail to load your file !')
+            }
         }
     }
 
@@ -75,17 +73,16 @@ const NewPost = () => {
                 const gb: any = (file.size / 1000000000).toFixed(2);
                 const gbVerify: number = Math.floor(file.size / 1000000000);
                 if (gbVerify > 0) {
-
+                    setPostType(null)
                     setSizeExp("gb");
                     setFileSize(gb);
                     return setFailsize(true);
-                } else {
+                }
+                if (file.size >= 20000000) {
                     setSizeExp('mb');
                     setFileSize(mb);
                     return setFailsize(true);
                 }
-                setFileSize(mb);
-
             }
             setTestContents(file);
             setPostType("video")
@@ -134,9 +131,7 @@ const NewPost = () => {
                     overflowWrap: "break-word",
 
                 }} className="mt-5 text-gray-600 dark:text-gray-50">
-                    <Anchorme linkComponent={CustomLink} target="_blank" rel="noreferrer noopener">
-                        {postText}
-                    </Anchorme>
+                    <LinkParaGraph paragraph={postText} />
                 </p>
 
             </>}

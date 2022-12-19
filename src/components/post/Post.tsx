@@ -3,16 +3,9 @@ import user from "../../recoil/user";
 import { IoPersonAddOutline } from 'react-icons/io5';
 import { HiOutlineHeart } from "react-icons/hi2"
 import { GoComment } from "react-icons/go"
-import { Anchorme, LinkComponentProps } from 'react-anchorme'
+import LinkParaGraph from "../../widgets/linkParaGraph";
 import PostVideo from "../../assets/videos/playstation.mp4";
 
-const CustomLink = (props: LinkComponentProps) => {
-    return (
-        <i>
-            <a className="text-blue-500" {...props} />
-        </i>
-    )
-}
 
 
 const Post = () => {
@@ -36,10 +29,10 @@ const Post = () => {
 
         <div className="mt-10">
             <p className="text-gray-600 dark:text-gray-200">
-                <Anchorme linkComponent={CustomLink} target="_blank" rel="noreferrer noopener">
-                    Lorem ipsum  dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit praesentium illum iste veritatis omnis deserunt itaque fugit voluptatem ad! Id.
-                    https://www.youtube.com/results?search_query=maybach
-                </Anchorme>
+                <LinkParaGraph paragraph={`
+               Lorem ipsum  dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit praesentium illum iste veritatis omnis deserunt itaque fugit voluptatem ad! Id.
+                https://www.youtube.com/results?search_query=maybach`} />
+
             </p>
         </div>
 

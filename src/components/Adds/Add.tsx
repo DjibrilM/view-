@@ -118,6 +118,7 @@ const Adds: React.FC<props> = ({ classes }) => {
     return (
         <>
             <aside className={`${classes} w-full pc:max-w-[400px] min-w-[300px] duration-200  p-4 bg-white border dark:border-none dark:bg-[#1A1A1A] rounded-lg   top-32 `}>
+                <p className="mb-2 dark:text-gray-200 text-gray-700">Add</p>
                 <Swiper
                     direction="vertical"
                     allowTouchMove={false}
@@ -172,7 +173,7 @@ const Adds: React.FC<props> = ({ classes }) => {
                                     </SwiperSlide>
                                 )
                             }
-                            
+
                         })
                     }
                 </Swiper>

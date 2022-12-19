@@ -14,7 +14,3 @@ img{
   -moz-window-dragging:no-drag;
 }
 
-div{
-  -webkit-user-drag: none;
-  -moz-window-dragging:no-drag;
-}

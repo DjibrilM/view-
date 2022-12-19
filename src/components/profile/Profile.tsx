@@ -8,7 +8,7 @@ import Buttons from "../UI/Button";
 
 
 const Profile = () => {
-    return <aside className="w-full tablet:max-w-[320px] min-w-[300px] duration-200 h-[440px] p-4 bg-white border dark:border-none dark:bg-[#1A1A1A] rounded-lg self-start  top-32">
+    return <aside className="w-full tablet:max-w-[320px] duration-200 h-[440px] p-4 bg-white border dark:border-none dark:bg-[#1A1A1A] rounded-lg self-start  top-32">
         <div className="flex justify-between border-b border-gray-200  dark:border-[#ffffff10] pb-5">
             <div className="flex gap-2">
                 <div className="w-[40px] h-[40px]  rounded-full overflow-hidden bg-gray-300  dark:border">
