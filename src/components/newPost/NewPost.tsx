@@ -79,6 +79,7 @@ const NewPost = () => {
                     return setFailsize(true);
                 }
                 if (file.size >= 20000000) {
+                    setPostType(null)
                     setSizeExp('mb');
                     setFileSize(mb);
                     return setFailsize(true);
