@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from 'react-icons/io'
-import {BsDownload,BsBookmark} from 'react-icons/bs'
+import { BsDownload, BsBookmark } from 'react-icons/bs'
 import { useRecoilValue } from "recoil";
 import user from "../recoil/user";
 
@@ -26,9 +26,8 @@ const Image: React.FC<Props> = ({ source }): JSX.Element => {
                 }} className="max-w-[600px] mt-5 min-w-[200px] w-full " src={source} alt="" />
 
                 <div className="max-w-[600px] mt-5 min-w-[200px] w-full flex gap-10 text-white cursor-pointer text-2xl font-bold">
-                    <BsDownload />
-                    <BsBookmark />
-                    
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#60a5fa] hover:bg-[#8ab5ea]"><BsDownload className="text-[19px]" /></div>
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#60a5fa] hover:bg-[#8ab5ea]"><BsBookmark className="text-[19px]" /></div>
                 </div>
             </section>
             {loaded &&

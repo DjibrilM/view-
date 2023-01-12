@@ -13,6 +13,8 @@ import Register from './scenes/register/Register';
 import ErrorPage from './scenes/404/404';
 import { verify } from './services/auth';
 import Loading from './components/UI/lodingSpinner';
+import Network from './components/network/network';
+
 
 function App() {
   const [user, setUserState] = useRecoilState<any>(userState);
@@ -65,6 +67,7 @@ function App() {
 
   return !loading ? (
     <div className={`w-full h-[100%] ${user.mode}`} >
+      <Network />
       <Routes >
         {!user.isLoggedIn ?
           <>
