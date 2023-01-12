@@ -13,7 +13,7 @@ const SearchBar = () => {
                 <AiOutlineSearch className="text-00D5FA absolute right-5 top-3 cursor-pointer dark:text-[#F6F6F6]" />
                 {focused &&
                     <div className="w-full left-0 right-0 h-[16rem] bg-white  top-12 absolute border-b border-l border-r flex justify-center items-center flex-col gap-3 dark:bg-[#1A1A1A] dark:border-r-[#ffffff43] dark:border-l-[#ffffff43] dark:border-b-[#ffffff43]">
-                        <h1 className="text-gray-500 dark:text-gray-300 font-semibold">Type Something 😁 </h1>
+                        <h1 className="text-gray-500 dark:text-gray-300c font-semibold">Type Something 😁 </h1>
                         <img src={searchImage} className="w-20" alt="" />
                     </div>}
                 <input onBlur={() => setFocused(false)} onFocus={() => setFocused(true)} type="text" className="bg-transparent w-[80%] outline-none h-full p-3 font-[12px] dark:text-gray-100" placeholder="search..." />
