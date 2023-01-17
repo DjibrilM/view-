@@ -14,6 +14,7 @@ import ErrorPage from './scenes/404/404';
 import { verify } from './services/auth';
 import Loading from './components/UI/lodingSpinner';
 import Network from './components/network/network';
+import Videos from './scenes/videos/videos';
 
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
           </>
         }
         <Route path='*' element={<ErrorPage />} />
+        <Route path='videos' element={<Videos />} />
       </Routes>
     </div>
   ) : (<div className='flex justify-center items-center h-[100vh]'>

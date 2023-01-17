@@ -12,9 +12,8 @@ import DropDown from "../dropDown/dropDown";
 import { RxVideo } from 'react-icons/rx'
 import MobileSearchBar from "../searchBar/MobileSearchBar";
 import mobileSearchBarState from "../../recoil/searchBar";
-
-
-
+import { TfiVideoClapper } from 'react-icons/tfi';
+ 
 //components
 import SearchBar from "../searchBar/searchBar";
 
@@ -86,8 +85,6 @@ const Navbar = (): JSX.Element => {
           </Buttons>
         </div>
 
-
-
         <div className="">
           <Buttons
             click={() => { }}
@@ -158,15 +155,7 @@ const Navbar = (): JSX.Element => {
         <Buttons
           click={() => { }}
         >
-          <BsFillQuestionCircleFill className="dark:text-[#F6F6F6]" />
-        </Buttons>
-      </div>
-
-      <div className="">
-        <Buttons
-          click={() => { }}
-        >
-          <RxVideo className="dark:text-[#F6F6F6]" />
+          <TfiVideoClapper className="dark:text-[#F6F6F6]" />
         </Buttons>
       </div>
 
