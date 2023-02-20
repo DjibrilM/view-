@@ -12,6 +12,7 @@ import { useRecoilState } from 'recoil';
 import userState from "../../recoil/user"
 const options = ['logout', 'djibril mugisho', 'Rebase and merge'];
 
+
 const DropDown = () => {
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef<HTMLDivElement>(null);
